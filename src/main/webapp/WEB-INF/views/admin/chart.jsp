@@ -25,7 +25,7 @@
                                <div class="col-md-6 col-sm-12 col-xs-12">                     
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            월별 회원 가입 현황
+                            2016년 월별 회원 가입 현황
                         </div>
                         <div class="panel-body">
                             <div id="morris-bar-chart"></div>
@@ -35,7 +35,7 @@
                       <div class="col-md-6 col-sm-12 col-xs-12">                     
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            월별 회원 및 호스팅 가입,예약 통계 
+                            2016년 월별 회원 및 호스팅 가입,예약 통계 
                         </div>
                         <div class="panel-body">
                             <div id="morris-area-chart"></div>

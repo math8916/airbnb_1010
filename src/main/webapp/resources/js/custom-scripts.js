@@ -26,37 +26,43 @@
             Morris.Bar({
                 element: 'morris-bar-chart',
                 data: [{
-                    y: '2006',
-                    a: 100,
-                    b: 90
+                    y: '1월',
+                    a: 10000
                 }, {
-                    y: '2007',
-                    a: 75,
-                    b: 65
+                    y: '2월',
+                    a: 7500
                 }, {
-                    y: '2008',
-                    a: 50,
-                    b: 40
+                    y: '3월',
+                    a: 5000
+                    
                 }, {
-                    y: '2009',
-                    a: 75,
-                    b: 65
+                    y: '4월',
+                    a: 7500
                 }, {
-                    y: '2010',
-                    a: 50,
-                    b: 40
+                    y: '5월',
+                    a: 5000
                 }, {
-                    y: '2011',
-                    a: 75,
-                    b: 65
+                    y: '7월',
+                    a: 7500,
                 }, {
-                    y: '2012',
-                    a: 100,
-                    b: 90
+                    y: '8월',
+                    a: 8800
+                },{
+                    y: '9월',
+                    a: 9800
+                },{
+                    y: '10월',
+                    a: 8000
+                },{
+                    y: '11월',
+                    a: 2500
+                },{
+                    y: '12월',
+                    a: 1000
                 }],
                 xkey: 'y',
-                ykeys: ['a', 'b'],
-                labels: ['Series A', 'Series B'],
+                ykeys: ['a'],
+                labels: ['Series A'],
                 hideHover: 'auto',
                 resize: true
             });
@@ -66,14 +72,11 @@
             Morris.Donut({
                 element: 'morris-donut-chart',
                 data: [{
-                    label: "Download Sales",
-                    value: 12
+                    label: "전체 순수 회원수",
+                    value: 52545
                 }, {
-                    label: "In-Store Sales",
-                    value: 30
-                }, {
-                    label: "Mail-Order Sales",
-                    value: 20
+                    label: "전체 호스팅 회원수",
+                    value: 30340
                 }],
                 resize: true
             });
@@ -84,62 +87,73 @@
             Morris.Area({
                 element: 'morris-area-chart',
                 data: [{
-                    period: '2010 Q1',
-                    iphone: 2666,
-                    ipad: null,
-                    itouch: 2647
+                    period: '2016-01',
+                    회원수: 12666,
+                    호스팅수: 9000,
+                    예약수: 2647
                 }, {
-                    period: '2010 Q2',
-                    iphone: 2778,
-                    ipad: 2294,
-                    itouch: 2441
+                   period: '2016-02',
+                    회원수: 22666,
+                    호스팅수: 19000,
+                    예약수: 12647
                 }, {
-                    period: '2010 Q3',
-                    iphone: 4912,
-                    ipad: 1969,
-                    itouch: 2501
+                   period: '2016-03',
+                    회원수: 19666,
+                    호스팅수: 9800,
+                    예약수: 8647
                 }, {
-                    period: '2010 Q4',
-                    iphone: 3767,
-                    ipad: 3597,
-                    itouch: 5689
+                   period: '2016-04',
+                    회원수: 32666,
+                    호스팅수: 26000,
+                    예약수: 12647
                 }, {
-                    period: '2011 Q1',
-                    iphone: 6810,
-                    ipad: 1914,
-                    itouch: 2293
+                   period: '2016-05',
+                    회원수: 22366,
+                    호스팅수: 26000,
+                    예약수: 9647
                 }, {
-                    period: '2011 Q2',
-                    iphone: 5670,
-                    ipad: 4293,
-                    itouch: 1881
+                   period: '2016-06',
+                    회원수: 52366,
+                    호스팅수: 36000,
+                    예약수: 19647
                 }, {
-                    period: '2011 Q3',
-                    iphone: 4820,
-                    ipad: 3795,
-                    itouch: 1588
+                   period: '2016-07',
+                    회원수: 35666,
+                    호스팅수: 26000,
+                    예약수: 15647
                 }, {
-                    period: '2011 Q4',
-                    iphone: 15073,
-                    ipad: 5967,
-                    itouch: 5175
+                   period: '2016-08',
+                    회원수: 33666,
+                    호스팅수: 21000,
+                    예약수: 57540
                 }, {
-                    period: '2012 Q1',
-                    iphone: 10687,
-                    ipad: 4460,
-                    itouch: 2028
+                   period: '2016-09',
+                    회원수: 55666,
+                    호스팅수: 46000,
+                    예약수: 45647
                 }, {
-                    period: '2012 Q2',
-                    iphone: 8432,
-                    ipad: 5713,
-                    itouch: 1791
+                   period: '2016-10',
+                    회원수: 35666,
+                    호스팅수: 26000,
+                    예약수: 15647
+                }, {
+                   period: '2016-11',
+                    회원수: 15666,
+                    호스팅수: 16000,
+                    예약수: 10647
+                }, {
+                   period: '2016-12',
+                    회원수: 12666,
+                    호스팅수: 6000,
+                    예약수: 25647
                 }],
                 xkey: 'period',
-                ykeys: ['iphone', 'ipad', 'itouch'],
-                labels: ['iPhone', 'iPad', 'iPod Touch'],
+                ykeys: ['회원수', '호스팅수', '예약수'],
+                labels: ['회원수', '호스팅수', '예약자수'],
                 pointSize: 2,
                 hideHover: 'auto',
                 resize: true
+
             });
 
             /* MORRIS LINE CHART
@@ -147,37 +161,37 @@
             Morris.Line({
                 element: 'morris-line-chart',
                 data: [{
-                    y: '2006',
-                    a: 100,
-                    b: 90
-                }, {
-                    y: '2007',
-                    a: 75,
-                    b: 65
-                }, {
-                    y: '2008',
-                    a: 50,
-                    b: 40
-                }, {
                     y: '2009',
-                    a: 75,
-                    b: 65
+                    a: 100000,
+                    b: 90000
                 }, {
                     y: '2010',
-                    a: 50,
-                    b: 40
+                    a: 75000,
+                    b: 65000
                 }, {
                     y: '2011',
-                    a: 75,
-                    b: 65
+                    a: 50000,
+                    b: 40000
                 }, {
                     y: '2012',
-                    a: 100,
-                    b: 90
+                    a: 75000,
+                    b: 65000
+                }, {
+                    y: '2014',
+                    a: 50000,
+                    b: 40000
+                }, {
+                    y: '2015',
+                    a: 75000,
+                    b: 65000
+                }, {
+                    y: '2016',
+                    a: 120000,
+                    b: 90000
                 }],
                 xkey: 'y',
                 ykeys: ['a', 'b'],
-                labels: ['Series A', 'Series B'],
+                labels: ['회원가입자 수', '호스팅 수'],
                 hideHover: 'auto',
                 resize: true
             });

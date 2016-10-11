@@ -33,6 +33,7 @@
 			<tiles:insertAttribute name="body" /> 
 		</article>
 	</section>
+		
 	<footer>
 		 <div id="admin_footer">
 		 	<tiles:insertAttribute name="footer" /> 

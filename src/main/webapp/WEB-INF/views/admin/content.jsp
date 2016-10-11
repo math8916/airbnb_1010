@@ -7,6 +7,24 @@
 <c:set var="img" value="${context}/resources/img"/>	
 <c:set var="css" value="${context}/resources/css"/>	
 <c:set var="js" value="${context}/resources/js"/>
+<c:set var = "pgSize" value = "5"/>
+<c:choose>
+   <c:when test = "${totCount %pgSize eq 0}">
+      <c:set var = "totPg" value = "${totCount/pgSize}"/>
+   </c:when>
+   <c:otherwise>
+      <c:set var = "tatPg" value = "${totCount/pgSize+1}"/>
+   </c:otherwise>
+</c:choose>
+<c:set var = "starPg" value = "${pgNum - ((pgNum-1)%pgSize)}"/>
+<c:choose>
+   <c:when test = "${starPg +pgSize-1 le totPg}">
+      <c:set var = "lastpg" value = "${starPg + pgSize -1}"/>
+   </c:when>
+<c:otherwise>
+   <c:set var = "lastpg" value = "${totPg}"/>
+</c:otherwise>      
+</c:choose>  
 
         <body>
         <div id="page-wrapper">
@@ -25,7 +43,7 @@
                         <div class="panel panel-primary text-center no-boder bg-color-green">
                             <div class="panel-body">
                                 <i class="fa fa-user fa-5x"></i>
-                                <h3>8,457</h3>
+                                <h3>8,457  넘어온 값</h3>
                             </div>
                             <div class="panel-footer back-footer-green">
                                 가입회원자수
