@@ -13,7 +13,7 @@
 			 <div class="row">
                     <div class="col-md-12">
                         <h1 class="page-header">
-                            	목록  <small>회원 리스트</small>
+                            	회원  <small>가입 리스트</small>
                         </h1>
                     </div>
                 </div> 

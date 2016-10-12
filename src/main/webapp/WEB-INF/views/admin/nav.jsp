@@ -36,10 +36,10 @@
                                 <a href="${context}/admin/list">회원  리스트</a>
                             </li>
                             <li>
-                                <a href="${context}/admin/list">호스팅 리스트</a>
+                                <a href="${context}/admin/h-list">호스팅 리스트</a>
                             </li>
                             <li>
-                                <a href="${context}/admin/list">예약 현황 리스트</a>
+                                <a href="${context}/admin/r-list">예약 현황 리스트</a>
                                 
                             </li>
                         </ul>

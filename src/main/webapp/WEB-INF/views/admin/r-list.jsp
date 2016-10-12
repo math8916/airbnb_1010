@@ -7,99 +7,28 @@
 <c:set var="img" value="${context}/resources/img"/>	
 <c:set var="css" value="${context}/resources/css"/>	
 <c:set var="js" value="${context}/resources/js"/>
-<c:set var = "pgSize" value = "5"/>
-<c:choose>
-   <c:when test = "${totCount %pgSize eq 0}">
-      <c:set var = "totPg" value = "${totCount/pgSize}"/>
-   </c:when>
-   <c:otherwise>
-      <c:set var = "tatPg" value = "${totCount/pgSize+1}"/>
-   </c:otherwise>
-</c:choose>
-<c:set var = "starPg" value = "${pgNum - ((pgNum-1)%pgSize)}"/>
-<c:choose>
-   <c:when test = "${starPg +pgSize-1 le totPg}">
-      <c:set var = "lastpg" value = "${starPg + pgSize -1}"/>
-   </c:when>
-<c:otherwise>
-   <c:set var = "lastpg" value = "${totPg}"/>
-</c:otherwise>      
-</c:choose>  
 
-        <body>
-        <div id="page-wrapper">
+        <div id="page-wrapper" >
             <div id="page-inner">
-                <div class="row">
+			 <div class="row">
                     <div class="col-md-12">
                         <h1 class="page-header">
-                            Dashboard <small>Summary of AIRBNB</small>
+                            	예약  <small>최근 예약 리스트</small>
                         </h1>
                     </div>
-                </div>
-                <!-- /. ROW  -->
-
-                <div class="row">
-                    <div class="col-md-3 col-sm-12 col-xs-12">
-                        <div class="panel panel-primary text-center no-boder bg-color-green">
-                            <div  class="panel-body">
-                            <a  href="${context}/admin/list">
-                                <i class="fa fa-user fa-5x"></i>
-                                <h3>8,457  </h3>
-                            </div>
-                            <div class="panel-footer back-footer-green" >
-                                가입회원자수</a>
-
-                            </div>
+                </div> 
+                 <!-- /. ROW  -->
+               
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Advanced Tables -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            예약현황리스트
                         </div>
-                    </div>
-                    <div class="col-md-3 col-sm-12 col-xs-12">
-                        <div class="panel panel-primary text-center no-boder bg-color-blue">
-                            <div class="panel-body">
-                            <a  href="${context}/admin/h-list">
-                                <i class="fa fa-home fa-5x"></i>
-                                <h3>52,160 </h3>
-                            </div>
-                            <div class="panel-footer back-footer-blue">
-                                호스팅 회원수</a>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-12 col-xs-12">
-                        <div class="panel panel-primary text-center no-boder bg-color-red">
-                            <div class="panel-body">
-                            <a  href="${context}/admin/r-list">
-                                <i class="fa fa-book fa-5x"></i>
-                                <h3>15,823 </h3>
-                            </div>
-                            <div class="panel-footer back-footer-red">
-                              예약 현황</a>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-12 col-xs-12">
-                        <div  class="panel panel-primary text-center no-boder bg-color-brown">
-                            <div class="panel-body">
-                                <i class="fa fa-users fa-5x" ></i>
-                                <h3>36,752 </h3>
-                            </div>
-                            <div class="panel-footer back-footer-brown">
-                               Daily Visits
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                               Latest booking status list
-                            </div> 
-                            <div class="panel-body">
-                                <div class="table-responsive">
-                                    <table class="table table-striped table-bordered table-hover">
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                 <table class="table table-striped table-bordered table-hover">
                                         <thead>
                                             <tr>
                                                 <th>예약번호</th>
@@ -169,10 +98,16 @@
 
                                         </tbody>
                                     </table>
-                                </div>
                             </div>
+                            
                         </div>
-
                     </div>
+                    <!--End Advanced Tables -->
+                
+                    <!--  end  Context Classes  -->
                 </div>
+            </div>
                 <!-- /. ROW  -->
+        </div>
+               
+

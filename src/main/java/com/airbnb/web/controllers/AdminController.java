@@ -36,6 +36,16 @@ public class AdminController {
 		logger.info("----- ADMIN_CONTOLLER list -----");
 		return "admin:admin/list.tiles";
 	}
+	@RequestMapping("/r-list")
+	public String adminRevList(){
+		logger.info("----- ADMIN_CONTOLLER list -----");
+		return "admin:admin/r-list.tiles";
+	}
+	@RequestMapping("/h-list")
+	public String adminHouseList(){
+		logger.info("----- ADMIN_CONTOLLER list -----");
+		return "admin:admin/h-list.tiles";
+	}
 	@RequestMapping("/search")
 	public String adminSearch(){
 		logger.info("----- ADMIN_CONTOLLER search -----");
